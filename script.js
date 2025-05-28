@@ -62,6 +62,8 @@ btn.forEach((el, index) => {
 
         // Check for a draw (if all buttons are clicked and no winner)
         if ([...btn].every(button => button.innerText !== "")) {
+            winner.innerText = "";
+            Losser.innerText = "";
             winner.innerText = "It's a DRAW!";
         }
     });
